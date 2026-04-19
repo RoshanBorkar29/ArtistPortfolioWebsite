@@ -1,15 +1,20 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AI Artist & Unity Developer Portfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- ✅ ADD YOUR CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@400;600;700;800&display=swap" rel="stylesheet">
   </head>
+
   <body>
+
     <!-- Navbar -->
     <nav class="navbar">
       <div class="nav-container">
@@ -21,306 +26,50 @@
           <a href="#achievements">Achievements</a>
           <a href="mailto:roshanborkar511@gmail.com" class="btn-primary btn-nav">Email Me</a>
         </div>
-        <button class="mobile-menu-btn">
-          <i data-lucide="menu"></i>
-        </button>
       </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section class="hero" id="home">
-      <div class="hero-bg">
-        <div class="shape shape-1"></div>
-        <div class="shape shape-2"></div>
-        <div class="shape shape-3"></div>
-      </div>
-      <div class="hero-content reveal">
-        <div class="tagline">Crafting Digital Worlds</div>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero-content">
         <h1>AI Artist & <span>Game Developer</span></h1>
-        <p>Specializing in anime-style illustrations, high-concept game visuals, and immersive Unity experiences.</p>
-        <div class="hero-actions">
-          <a href="#works" class="btn-primary">View Work</a>
-          <a href="#projects" class="btn-secondary">Explore Projects</a>
-        </div>
+        <p>Specializing in anime-style illustrations and game visuals.</p>
       </div>
     </section>
 
-    <!-- About Section -->
-    <section class="about section" id="about">
-      <div class="container">
-        <div class="about-grid">
-          <div class="about-image-wrapper reveal fade-left">
-            <div class="about-image">
-              <img src="/images/profile.jpg" alt="Profile Cover Photo" style="width:100%; height:100%; object-fit:cover; border-radius: 12px;">
-            </div>
-            <div class="about-decoration"></div>
-          </div>
-          <div class="about-text reveal fade-right">
-            <div class="section-badge">About Me</div>
-            <h2>Fusing Art & Technology</h2>
-            <p>I am a passionate creator who bridges the gap between imagination and playable reality. With a strong foundation in both Unity game development and cutting-edge AI artist tools, I craft compelling visual narratives and aesthetic environments.</p>
-            <div class="tools-container">
-              <h3>Core Arsenal</h3>
-              <div class="tools-grid">
-                <span class="tool-tag"><i data-lucide="cpu"></i> Midjourney</span>
-                <span class="tool-tag"><i data-lucide="sparkles"></i> Stable Diffusion</span>
-                <span class="tool-tag"><i data-lucide="component"></i> Unity 3D / C#</span>
-                <span class="tool-tag"><i data-lucide="video"></i> Runway ML</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+    <!-- About -->
+    <section id="about">
+      <h2>About Me</h2>
+      <img src="./images/profile.jpg" alt="Profile" width="300">
+      <p>I create game visuals and environments using AI + Unity.</p>
     </section>
 
-    <!-- Projects Section -->
-    <section class="projects section" id="projects">
-      <div class="container">
-        <div class="section-header reveal">
-          <div class="section-badge">Project 1</div>
-          <h2>Whispering Woods</h2>
-          <p>An enchanted fantasy adventure exploring ruined forests and mystical creatures.</p>
-        </div>
-        <div class="projects-grid">
-          <div class="project-card reveal">
-            <div class="project-image">
-              <img src="/images/img1.jpg" alt="Enchanted Forest Concept" style="width:100%; height:100%; object-fit:cover;" onerror="this.src='https://placehold.co/600x400/DCE5D6/2F2F2F?text=Forest+Concept'">
-            </div>
-            <div class="project-info">
-              <h3>Whispering Woods</h3>
-              <p>An atmospheric exploration game focusing on environmental storytelling within an ancient, overgrown mystical forest.</p>
-              </div>
-          </div>
-          <div class="project-card reveal delay-1">
-            <div class="project-image">
-              <img src="/images/img3.jpg" alt="Elven Warrior Concept" style="width:100%; height:100%; object-fit:cover;" onerror="this.src='https://placehold.co/600x400/DCE5D6/2F2F2F?text=Warrior+Concept'">
-            </div>
-            <div class="project-info">
-              <h3>Crystal Guardian Sylvani</h3>
-              <p>Action RPG character design project featuring a nature-bound elven warrior wielding enchanted crystal weaponry.</p>
-              </div>
-          </div>
-          <div class="project-card reveal delay-2">
-            <div class="project-image">
-              <img src="/images/img2.jpg" alt="Elemental Bestiary Concept" style="width:100%; height:100%; object-fit:cover;" onerror="this.src='https://placehold.co/600x400/DCE5D6/2F2F2F?text=Bestiary+Concept'">
-            </div>
-            <div class="project-info">
-              <h3>Elemental Bestiary</h3>
-              <p>Dynamic enemy concept art showcasing a feral nature golem and an ethereal blue lightning elemental.</p>
-              </div>
-          </div>
-        </div>
-      </div>
+    <!-- Projects -->
+    <section id="projects">
+      <h2>Projects</h2>
+
+      <img src="./images/img1.jpg" width="300">
+      <img src="./images/img2.jpg" width="300">
+      <img src="./images/img3.jpg" width="300">
+
     </section>
 
-    <!-- Best Works Section -->
-    <section class="best-works section" id="works">
-      <div class="container">
-        <div class="section-header reveal">
-          <div class="section-badge">Project 2</div>
-          <h2>Cyber Protocol</h2>
-          <p>A high-octane sci-fi action game concept featuring cybernetic ninjas, mechanized spider drones, and neon environments.</p>
-        </div>
-        <div class="works-grid">
-          <div class="work-card large reveal">
-            <img src="/images/img4.jpg" alt="Sci-Fi Environment Concept" class="work-bg" style="object-fit:cover;" onerror="this.src='https://placehold.co/600x800/DCE5D6/2F2F2F?text=Environment'">
-            <div class="work-overlay">
-              <span class="work-tag">Environment</span>
-              <h3>Neon Jungle Base</h3>
-            </div>
-          </div>
-          <div class="work-card reveal delay-1">
-            <img src="/images/img7.png" alt="Player Character Concept" class="work-bg" style="object-fit:cover;" onerror="this.src='https://placehold.co/600x400/DCE5D6/2F2F2F?text=Player+Character'">
-            <div class="work-overlay">
-              <span class="work-tag">Protagonist</span>
-              <h3>Cyber-Ninja Player</h3>
-            </div>
-          </div>
-          <div class="work-card reveal delay-2">
-            <img src="/images/img6.jpg" alt="Weapon Arsenal Concept" class="work-bg" style="object-fit:cover;" onerror="this.src='https://placehold.co/600x400/DCE5D6/2F2F2F?text=Weapons'">
-            <div class="work-overlay">
-              <span class="work-tag">Arsenal</span>
-              <h3>Energy Blade & Blasters</h3>
-            </div>
-          </div>
-          <div class="work-card large reveal delay-1">
-            <img src="/images/img5.jpg" alt="Mecha Spider Enemies" class="work-bg" style="object-fit:cover;" onerror="this.src='https://placehold.co/600x800/DCE5D6/2F2F2F?text=Enemies'">
-            <div class="work-overlay">
-              <span class="work-tag">Enemies</span>
-              <h3>Mechanized Spider-Drones</h3>
-            </div>
-          </div>
-        </div>
-      </div>
+    <!-- Works -->
+    <section id="works">
+      <h2>Best Works</h2>
+
+      <img src="./images/img4.jpg" width="300">
+      <img src="./images/img5.jpg" width="300">
+      <img src="./images/img6.jpg" width="300">
+
     </section>
 
-    <!-- Project 3 Section -->
-    <section class="projects section" id="project3">
-      <div class="container">
-        <div class="section-header reveal">
-          <div class="section-badge">Project 3</div>
-          <h2>Scavenger Squad</h2>
-          <p>Early ideation and concept art for a multiplayer island adventure.</p>
-        </div>
-        <div class="projects-grid">
-          <div class="project-card reveal">
-            <div class="project-image">
-              <img src="/images/img9.jpg" alt="Island Map" style="width:100%; height:100%; object-fit:contain; padding: 1rem; background-color: var(--bg-secondary, #F4E9DC);" onerror="this.src='https://placehold.co/600x400/DCE5D6/2F2F2F?text=Island+Map'">
-            </div>
-            <div class="project-info">
-              <h3>Island Environment</h3>
-              <p>Isometric lush tropical island overview with ancient ruins and hidden bases.</p>
-            </div>
-          </div>
-          <div class="project-card reveal delay-1">
-            <div class="project-image">
-              <img src="/images/img10.jpg" alt="Gameplay Mechanics" style="width:100%; height:100%; object-fit:contain; padding: 1rem; background-color: var(--bg-secondary, #F4E9DC);" onerror="this.src='https://placehold.co/600x400/DCE5D6/2F2F2F?text=Mechanics'">
-            </div>
-            <div class="project-info">
-              <h3>Gameplay Loop & Squad</h3>
-              <p>Breakdown of the core team, traps, weapons, and 'Sail, Scramble, Survive' loop.</p>
-            </div>
-          </div>
-          <div class="project-card reveal delay-2">
-            <div class="project-image">
-              <img src="/images/img11.jpg" alt="Creature Concepts" style="width:100%; height:100%; object-fit:contain; padding: 1rem; background-color: var(--bg-secondary, #F4E9DC);" onerror="this.src='https://placehold.co/600x400/DCE5D6/2F2F2F?text=Creatures'">
-            </div>
-            <div class="project-info">
-              <h3>Ecosystem Bestiary</h3>
-              <p>Concept art for island threats like the Spider-Crab, Trench-Worm, and Scavenger Plant.</p>
-            </div>
-          </div>
-          <div class="project-card reveal">
-            <div class="project-image">
-               <img src="/images/img12.jpg" alt="Trapper Character" style="width:100%; height:100%; object-fit:contain; padding: 1rem; background-color: var(--bg-secondary, #F4E9DC);" onerror="this.src='https://placehold.co/600x400/DCE5D6/2F2F2F?text=Trapper'">
-            </div>
-            <div class="project-info">
-              <h3>Trapper Concept Sheet</h3>
-              <p>Detailed orthographics, netting devices, and bandolier layout for the Trapper class.</p>
-            </div>
-          </div>
-          <div class="project-card reveal delay-1">
-            <div class="project-image">
-               <img src="/images/img13.jpg" alt="Sketchbook" style="width:100%; height:100%; object-fit:contain; padding: 1rem; background-color: var(--bg-secondary, #F4E9DC);" onerror="this.src='https://placehold.co/600x400/DCE5D6/2F2F2F?text=Sketchbook'">
-            </div>
-            <div class="project-info">
-              <h3>Explorer's Sketchbook</h3>
-              <p>Environmental design explorations focusing on coastal approaches and cave lairs.</p>
-            </div>
-          </div>
-        </div>
-      </div>
+    <!-- Contact -->
+    <section id="contact">
+      <h2>Contact</h2>
+      <a href="mailto:roshanborkar511@gmail.com">Email Me</a>
     </section>
 
-    <!-- Character Gallery Section -->
-    <section class="projects section" id="characters" style="padding-top: 0;">
-      <div class="container">
-         <div class="section-header reveal">
-          <div class="section-badge">Gallery</div>
-          <h2>Concept Arts Collection</h2>
-          <p>A diverse collection of character designs ranging from sci-fi heroes to tribal warriors.</p>
-        </div>
-        <div class="projects-grid">
-          <div class="project-card reveal">
-            <div class="project-image">
-               <img src="/images/img14.jpg" alt="Sci-Fi Armor Pink Hair" style="width:100%; height:100%; object-fit:contain; padding: 1rem; background-color: var(--bg-secondary, #F4E9DC);" onerror="this.src='https://placehold.co/600x400/DCE5D6/2F2F2F?text=Sci-Fi'">
-            </div>
-            <div class="project-info">
-              <h3>Neon Vanguard</h3>
-              <p>Clean vector-style sci-fi combat suit with electric aura.</p>
-            </div>
-          </div>
-          <div class="project-card reveal delay-1">
-            <div class="project-image">
-               <img src="/images/img15.jpg" alt="Chibi Sci-Fi" style="width:100%; height:100%; object-fit:contain; padding: 1rem; background-color: var(--bg-secondary, #F4E9DC);" onerror="this.src='https://placehold.co/600x400/DCE5D6/2F2F2F?text=Chibi'">
-            </div>
-            <div class="project-info">
-              <h3>Chibi Plasma Blade</h3>
-              <p>Stylized miniature character design for light RPG projects.</p>
-            </div>
-          </div>
-          <div class="project-card reveal delay-2">
-            <div class="project-image">
-               <img src="/images/img16.jpg" alt="Sprite Sheet" style="width:100%; height:100%; object-fit:contain; padding: 1rem; background-color: var(--bg-secondary, #F4E9DC);" onerror="this.src='https://placehold.co/600x400/DCE5D6/2F2F2F?text=Sprites'">
-            </div>
-            <div class="project-info">
-              <h3>Vanguard Animation Frames</h3>
-              <p>Idle and walking cycle sprite sheet for 2D platforming logic.</p>
-            </div>
-          </div>
-          <div class="project-card reveal">
-            <div class="project-image">
-               <img src="/images/img17.jpg" alt="Tribal Warriors" style="width:100%; height:100%; object-fit:contain; padding: 1rem; background-color: var(--bg-secondary, #F4E9DC);" onerror="this.src='https://placehold.co/600x400/DCE5D6/2F2F2F?text=Tribal'">
-            </div>
-            <div class="project-info">
-              <h3>Tribal Guardians</h3>
-              <p>Detailed orthographic exploration of heavy tribal mechanics and armor.</p>
-            </div>
-          </div>
-          <div class="project-card reveal delay-1">
-            <div class="project-image">
-               <img src="/images/img18.jpg" alt="Dapper Anime Character" style="width:100%; height:100%; object-fit:contain; padding: 1rem; background-color: var(--bg-secondary, #F4E9DC);" onerror="this.src='https://placehold.co/600x400/DCE5D6/2F2F2F?text=Dapper'">
-            </div>
-            <div class="project-info">
-              <h3>Aristocrat Strategist</h3>
-              <p>Portrait iterations for a sharp, steampunk-inspired tactical leader.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Achievements Section -->
-    <section class="achievements section" id="achievements">
-      <div class="container">
-        <div class="section-header reveal">
-          <div class="section-badge">Milestones</div>
-          <h2>Achievements</h2>
-        </div>
-        <div class="achievements-list" style="display: flex; flex-direction: column; gap: 1rem; max-width: 800px; margin: 0 auto;">
-          <div class="timeline-item reveal" style="align-items: center; padding: 1.5rem;">
-            <div class="timeline-icon"><i data-lucide="code-2"></i></div>
-            <div class="timeline-content">
-              <h3 style="margin: 0; font-size: 1.25rem;">Unity certified game developer</h3>
-            </div>
-          </div>
-          <div class="timeline-item reveal" style="align-items: center; padding: 1.5rem;">
-            <div class="timeline-icon"><i data-lucide="trophy"></i></div>
-            <div class="timeline-content">
-              <h3 style="margin: 0; font-size: 1.25rem;">Top 10 finalist in AIT-Pune Game Hackathon</h3>
-            </div>
-          </div>
-          <div class="timeline-item reveal" style="align-items: center; padding: 1.5rem;">
-            <div class="timeline-icon"><i data-lucide="star"></i></div>
-            <div class="timeline-content">
-              <h3 style="margin: 0; font-size: 1.25rem;">Top 50 game in Tripo-AI-Studio (Global)</h3>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section class="contact section" id="contact">
-      <div class="container" style="text-align: center;">
-        <div class="section-badge reveal" style="margin-bottom: 2rem;">Let's Work Together</div>
-        <h2 class="reveal" style="font-size: clamp(2.5rem, 5vw, 4rem); margin-bottom: 2.5rem; line-height: 1.2;">Have a project in mind?</h2>
-        <div class="reveal">
-          <a href="mailto:roshanborkar511@gmail.com" class="btn-primary" style="font-size: 1.25rem; padding: 1.25rem 3rem;">roshanborkar511@gmail.com</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-      <div class="container">
-        <div class="footer-content">
-          <div class="footer-logo">Roshan's <span>Art</span></div>
-          <p>&copy; 2026 AI Artist & Unity Developer. All rights reserved.</p>
-        </div>
-      </div>
-    </footer>
-
-    <script type="module" src="/src/main.ts"></script>
   </body>
 </html>
+```
